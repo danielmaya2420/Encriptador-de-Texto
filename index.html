@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador-Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="Imagen no encontrada">
+    </header>
+
+    <textarea type="text" placeholder="Escribe tu texto aqui:" id="textoUsuario"  ></textarea>
+
+    <div class="contenedorBotones">
+        <button id="btnEncriptar" class="botones" onclick="btnEncriptar();">Encriptar</button>
+        <button  id="btnDesencriptar" class="botones" onclick="btnDesencriptar();">Desencriptar</button>
+    </div>
+    
+    <div class="areaDesencriptar" class="areaDesencriptarTexto">
+        <p id="textoRealizado"></p>
+        <img src="imagenes/Logo2.png" alt="Imagen no encontrada" id="imgMuñeco" class="textoAreaDesencriptar">
+        <h3 class="textoAreaDesencriptar">Ningun mensaje encontrado</h3>
+        <p class="textoAreaDesencriptar">Ingresa el texto que desees encriptar o desencriptar</p>
+        <button class="botones" id="btnCopiar" onclick="copiar();">Copiar</button>
+        
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
